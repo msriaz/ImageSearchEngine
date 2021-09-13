@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image Item Component should match the Image Item  snapshot 1`] = `
+Array [
+  <View
+    style={
+      Array [
+        Object {
+          "height": "NaNpx",
+          "position": "absolute",
+          "width": "45%",
+        },
+      ]
+    }
+  >
+    <ActivityIndicator
+      color="#A8A8A8"
+      size="small"
+      style={
+        Array [
+          Object {
+            "left": "50%",
+            "marginBottom": 8,
+            "marginLeft": 8,
+            "marginRight": 8,
+            "marginTop": 8,
+            "position": "absolute",
+            "top": "50%",
+            "zIndex": 2,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F4F4F4",
+            "height": "NaNpx",
+            "justifyContent": "center",
+            "marginBottom": 8,
+            "marginLeft": 8,
+            "marginRight": 8,
+            "marginTop": 8,
+            "position": "absolute",
+            "width": "45%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "overflow": "hidden",
+            },
+            Array [
+              Object {
+                "height": "NaNpx",
+                "marginBottom": 8,
+                "marginLeft": 8,
+                "marginRight": 8,
+                "marginTop": 8,
+                "resizeMode": "cover",
+                "width": "45%",
+              },
+              Object {
+                "position": "absolute",
+              },
+            ],
+          ]
+        }
+      >
+        <FastImageView
+          resizeMode="cover"
+          source={
+            Object {
+              "uri": "https://farm66.static.flickr.com/65535/51443585974_0e481ab487.jpg",
+            }
+          }
+          style={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Array [
+          Object {
+            "height": "NaNpx",
+            "marginBottom": 8,
+            "marginLeft": 8,
+            "marginRight": 8,
+            "marginTop": 8,
+            "resizeMode": "cover",
+            "width": "45%",
+          },
+        ],
+      ]
+    }
+  >
+    <FastImageView
+      onFastImageLoad={[Function]}
+      onFastImageLoadStart={[Function]}
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": "https://farm66.static.flickr.com/65535/51443585974_0e481ab487.jpg",
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+  </View>,
+]
+`;
