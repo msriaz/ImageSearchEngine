@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 
 export const propTypes = {
-  onChangeText: PropTypes.func.isRequired,
+  onPressSearchButton: PropTypes.func.isRequired,
   placeholder: PropTypes.string,
   title: PropTypes.string,
+  value: PropTypes.string.isRequired,
+  isLoading: PropTypes.bool.isRequired,
 };
 
 export const defaultProps = {

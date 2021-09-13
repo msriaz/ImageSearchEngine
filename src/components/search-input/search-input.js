@@ -1,4 +1,10 @@
 import React, {useEffect, useState} from 'react';
+import {props, defaultProps} from './props';
+
+import {reportError, usePrevious} from '../../utils';
+import {save, load} from '../../utils/storage';
+import {APP_COLORS, STORAGE_KEYS} from '../../utils/constants';
+
 import {
   StyledTextInput,
   StyledButton,
@@ -6,10 +12,6 @@ import {
   StyledSpinner,
   SpinnerWrapper,
 } from './styled';
-import {props, defaultProps} from './props';
-import {reportError, usePrevious} from '../../utils';
-import {save, load} from '../../utils/storage';
-import {APP_COLORS, STORAGE_KEYS} from '../../utils/constants';
 import {Spinner} from '../spinner';
 /**
  * Search Input Component
@@ -17,6 +19,8 @@ import {Spinner} from '../spinner';
  * @param {placeholder} defines size of the placeholder of Text Input
  * @param {rest} defines additional props to be passed to TextInput
  * @param {title} defines title of search button
+ * @param {value} defines default value of search input
+ * @param {isLoading} defines the loading prop
  */
 
 export const SearchInput = ({

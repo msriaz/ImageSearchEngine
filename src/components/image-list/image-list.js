@@ -1,5 +1,6 @@
 import React, {forwardRef} from 'react';
 import {FlatList} from 'react-native';
+import {props, defaultProps} from './props';
 
 import {ImageItem} from './image-item';
 import {Spinner} from '../spinner';
@@ -9,6 +10,7 @@ import {Spinner} from '../spinner';
  * @param {data} defines the data of images to render
  * @param {loadMore} defines the function to be called for loading more data
  * @param {rest} defines additional props to pass to FlatList
+ * @param {isLoadingMore} defines to load more
  */
 export const ImageList = forwardRef(
   ({data, loadMore, isLoadingMore, rest}, ref) => {
@@ -31,3 +33,6 @@ export const ImageList = forwardRef(
     );
   },
 );
+
+ImageList.props = props;
+ImageList.defaultProps = defaultProps;

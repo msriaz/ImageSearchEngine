@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
+import {propTypes, defaultProps} from './props';
+
+import {getImageUrl} from '../../../utils';
 import {APP_COLORS} from '../../../utils/constants';
 
-import {propTypes, defaultProps} from './props';
 import {Image, Loader, PreviewImage, Wrapper} from './styled';
-import {getImageUrl} from '../../../utils';
-
 /**
  * Image Item Component
  * @param {imageData} defines the data of image to render

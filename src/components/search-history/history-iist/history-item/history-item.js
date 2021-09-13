@@ -1,6 +1,7 @@
 import React from 'react';
-import {StyledWrapper, StyledItem} from './styled';
 import {propTypes, defaultProps} from './props';
+
+import {StyledWrapper, StyledItem} from './styled';
 /**
  * Image Item Component
  * @param {title} defines the title of history item

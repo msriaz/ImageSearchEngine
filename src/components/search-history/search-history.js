@@ -1,4 +1,10 @@
 import React, {useEffect, useState} from 'react';
+import {props, defaultProps} from './props';
+
+import {load, clear} from '../../utils/storage';
+import {STORAGE_KEYS} from '../../utils/constants';
+import {reportError} from '../../utils';
+
 import {
   StyledHeader,
   StyledWrapper,
@@ -6,9 +12,6 @@ import {
   HeaderWrapper,
   StyledText,
 } from './styled';
-import {load, clear} from '../../utils/storage';
-import {STORAGE_KEYS} from '../../utils/constants';
-import {reportError} from '../../utils';
 import {HistoryList} from './history-iist';
 
 export const SearchHistory = ({onPressHistoryItem, searchQuery}) => {
@@ -53,3 +56,6 @@ export const SearchHistory = ({onPressHistoryItem, searchQuery}) => {
     </StyledWrapper>
   );
 };
+
+SearchHistory.props = props;
+SearchHistory.defaultProps = defaultProps;

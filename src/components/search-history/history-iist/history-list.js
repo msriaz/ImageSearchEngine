@@ -1,5 +1,6 @@
-import React, {forwardRef} from 'react';
+import React from 'react';
 import {FlatList} from 'react-native';
+import {props, defaultProps} from './props';
 
 import {HistoryItem} from './history-item';
 
@@ -18,7 +19,8 @@ export const HistoryList = ({data, onPressHistoryItem, rest}) => {
     />
   );
 
-  return (
-    <FlatList data={data} renderItem={renderItem} {...rest} />
-  );
+  return <FlatList data={data} renderItem={renderItem} {...rest} />;
 };
+
+HistoryList.props = props;
+HistoryList.defaultProps = defaultProps;

@@ -12,11 +12,9 @@ export const StyledWrapper = styled(SafeAreaView)`
 export const StyledText = styled.Text`
   font-size: 12px;
   font-weight: 200;
-  /* margin-left: ${({theme}) => theme.spacing.default}px; */
 `;
 
 export const ResultsWrapper = styled.View`
-  /* flex:1;  */
   flex-direction: row;
   justify-content: space-between;
   margin: ${({theme}) => theme.spacing.default}px;

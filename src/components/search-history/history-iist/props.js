@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
 export const propTypes = {
-  data: PropTypes.array.isRequired,
-  loadMore: PropTypes.func.isRequired,
+  searchQuery: PropTypes.string.isRequired,
+  onPressHistoryItem: PropTypes.func.isRequired,
 };
 
 export const defaultProps = {};
