@@ -24,7 +24,6 @@ export const SearchHistory = ({onPressHistoryItem, searchQuery}) => {
   const loadHistory = async () => {
     try {
       const savedHistory = await load(STORAGE_KEYS.HISTORY);
-      console.log('load more history');
       if (savedHistory) {
         setHistory(savedHistory);
       }

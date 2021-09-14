@@ -22,7 +22,6 @@ export const Home = () => {
     setIsLoading(true);
     try {
       const searchResponse = await axios.get(searchURL);
-      console.log('@@@@ search Response', searchResponse);
       setMetaData({
         totalRecords: searchResponse?.data?.photos?.total,
         totalPages: searchResponse?.data?.photos?.pages,

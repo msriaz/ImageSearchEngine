@@ -48,7 +48,6 @@ export const SearchInput = ({
   const saveToStorage = async () => {
     try {
       const savedHistory = await load(STORAGE_KEYS.HISTORY);
-      console.log('@@@ saved history', savedHistory);
       if (savedHistory?.indexOf(text) === -1 || !savedHistory) {
         const updatedHistory = savedHistory ? [...savedHistory, text] : [text];
         await save(STORAGE_KEYS.HISTORY, updatedHistory);
